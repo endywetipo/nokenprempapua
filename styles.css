@@ -1,0 +1,260 @@
+ /* =======================
+   Reset dan Dasar Umum
+========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* =======================
+   Header & Navigasi
+========================== */
+header {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #25D366;
+}
+
+/* =======================
+   Heading Umum
+========================== */
+h1, h2 {
+  text-align: center;
+}
+
+/* =======================
+   Tabel Produk
+========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+td {
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* =======================
+   Kartu Produk
+========================== */
+.produk {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Penyesuaian Ukuran Gambar Produk */
+.produk img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+  transition: transform 0.3s ease;
+}
+
+.produk img:hover {
+  transform: scale(1.05);
+}
+
+/* =======================
+   Tombol Umum
+========================== */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* =======================
+   Footer
+========================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* =======================
+   Marquee Khusus dengan Google Fonts
+=========================== */
+h2 marquee {
+  color: #ff4500; /* Warna oranye terang */
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Playfair Display', 'Poppins', sans-serif;
+  text-shadow: 2px 2px 5px #666;
+}
+
+/* =======================
+   Efek Fade In/Out untuk H1 dengan Background Bergerak
+=========================== */
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  display: inline-block;
+  background-color: #eeeeee; /* Abu-abu muda */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #d35400;
+  animation: fadeInOut 8s ease-in-out infinite;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.95); }
+}
+
+/* =======================
+   Header - Warna Teks dan Navigasi
+=========================== */
+header h1 {
+  color: #3498db; /* Biru cerah untuk judul */
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+header nav ul li a {
+  color: #ffffff; /* Warna putih untuk menu */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #1abc9c; /* Warna hijau cerah saat hover */
+}
+
+header nav ul li a.active {
+  color: #e74c3c; /* Warna merah untuk item aktif */
+}
+ 
+/* =======================
+   Deskripsi Noken
+=========================== */
+.deskripsi-noken {
+  font-size: 33px; /* Ukuran lebih besar */
+  color: hwb(0 100% 0% / 0.98);  /* Ungu elegan, bisa diganti sesuai selera */
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Header utama */
+.site-header {
+  text-align: center;
+  padding: 20px;
+  background-color:rgba(82, 144, 244, 0.792); /* atau sesuai kebutuhan */
+    display: flex;
+      align-items: center;
+}
+
+/* Logo */
+.logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    .site-header img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+/* Judul Website */
+.site-title {
+  color: white;
+  margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Navigasi */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.nav-menu li a.active {
+  color: #007bff;
+}
+body {
+  background-color: #FDF5E6; /* Krem hangat */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #F5DEB3; /* Warna noken alami */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+
