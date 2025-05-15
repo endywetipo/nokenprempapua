@@ -256,5 +256,47 @@ main {
   padding: 40px;
   border-radius: 10px;
 }
+/* ========================
+   Responsif untuk Layar Kecil (HP)
+=========================== */
+@media (max-width: 768px) {
+  .deskripsi-noken {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  h1 span {
+    font-size: 28px;
+    padding: 8px 16px;
+  }
+
+  .produk img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  .produk {
+    margin-bottom: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+}
 
 
